@@ -33,7 +33,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              "src/assets/js/script.js"
+              "src/assets/js/demo.min.js"
             ]
           },
           "configurations": {

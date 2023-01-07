@@ -1,14 +1,13 @@
-<div class="layer"></div>
-<a class="skip-link sr-only" href="#skip-target">Skip to content</a>
-<div class="page-flex">
-  <app-sidebar></app-sidebar>
-  <div class="main-wrapper">
-    <app-navbar></app-navbar>
-    <main class="main users chart-page" id="skip-target">
-      <div class="container">
-        <router-outlet></router-outlet>
+<div class="wrapper">
+  <app-navbar></app-navbar>
+  <div class="page-wrapper">
+    <div class="container-xl">
+      <router-outlet></router-outlet>
+    </div>
+    <div class="page-body">
+      <div class="container-xl">
       </div>
-    </main>
+    </div>
     <app-footer></app-footer>
   </div>
 </div>
