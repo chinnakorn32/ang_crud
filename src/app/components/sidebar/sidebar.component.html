@@ -17,10 +17,12 @@
     <div class="sidebar-body">
       <ul class="sidebar-body-menu">
         <li>
-          <a class="active" routerLink="/"><span class="icon home" aria-hidden="true"></span>Dashboard</a>
+          <a routerLinkActive="active" routerLink="/dashboard"  >
+            <span class="icon home" aria-hidden="true"></span>Dashboard
+          </a>
         </li>
         <li>
-          <a class="show-cat-btn" href="##">
+          <a class="show-cat-btn"  href="##">
             <span class="icon document" aria-hidden="true"></span>Book
             <span class="category__btn transparent-btn" title="Open list">
               <span class="sr-only">Open list</span>
@@ -29,7 +31,7 @@
           </a>
           <ul class="cat-sub-menu">
             <li>
-              <a routerLink="/books-list">Show Book</a>
+              <a routerLinkActive="active" routerLink="/books-list" >Show Book</a>
             </li>
           </ul>
         </li>

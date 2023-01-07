@@ -6,8 +6,8 @@ import { BooksListComponent } from './books-list/books-list.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: '/' },
-  { path: '', component: DashboardComponent },
+  { path: '', pathMatch: 'full', redirectTo: 'dashboard' },
+  { path: 'dashboard', component: DashboardComponent},
   { path: 'books-list', component: BooksListComponent },
   { path: 'add-book', component: AddBookComponent },
   { path: 'edit-book/:id', component: BookDetailComponent },
