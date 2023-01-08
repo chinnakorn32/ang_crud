@@ -41,7 +41,7 @@ export class BooksListComponent implements OnInit {
         Swal.fire({
           position: 'top-end',
           icon: 'success',
-          title: 'Your work has been saved',
+          title: 'ลบข้อมูลเรียบร้อยแล้ว',
           showConfirmButton: false,
           timer: 1500
         })
