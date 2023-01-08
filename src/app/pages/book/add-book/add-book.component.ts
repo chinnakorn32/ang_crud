@@ -9,7 +9,6 @@ import { CrudService } from 'src/app/service/crud.service';
   styleUrls: ['./add-book.component.css'],
 })
 export class AddBookComponent implements OnInit {
-  title = 'Add Book';
   bookFrom: FormGroup;
   alert = false;
 
