@@ -1,19 +1,20 @@
 <div class="container mt-3">
-    <h1>Add Book</h1>
+    <h1>{{title}}</h1>
     <div class="row  mt-3">
         <div class="col-md-6">
             <form [formGroup]="bookFrom" (ngSubmit)="onSubmit()">
                 <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" formControlName="name">
+                    <label>Name</label>
+                    <input type="text" formControlName="name" class="form-control"
+                        [ngClass]="{ 'is-invalid': alert && err.name.errors }" />
                 </div>
                 <div class="form-group">
                     <label for="price">Price</label>
-                    <input type="text" class="form-control" formControlName="price" required>
+                    <input type="number" class="form-control" formControlName="price" [ngClass]="{ 'is-invalid': alert && err.name.errors }">
                 </div>
                 <div class="form-group">
                     <label for="description">Description</label>
-                    <input type="text" class="form-control" formControlName="description" required>
+                    <input type="text" class="form-control" formControlName="description" [ngClass]="{ 'is-invalid': alert && err.name.errors }">
                 </div>
                 <div class="form-group mt-3">
                     <button class="btn btn-primary btn-block" type="submit">Add Book</button>
@@ -22,6 +23,10 @@
         </div>
     </div>
 </div>
+
+
+
+
 
 <!-- <div class="page-header d-print-none">
     <div class="row align-items-center">
